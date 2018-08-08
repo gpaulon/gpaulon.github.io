@@ -1,0 +1,468 @@
+
+
+<!-- Still to do: 
+- Smooth transition navigation bar (Javascript)
+- Transparency when scrolling down from home (Javascript)
+- Smaller markers in map
+- Center Navigation bar
+- Try on mobile (remove the collapsing navigation bar?)
+- only allow API from published website (restrict access)
+- replace batteries in languages with something else
+- link papers, markdown as Trevor Campbell with icons
+- per West Some, add map and travel plans
+-->
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Page Title</title>
+  </head>
+  
+   <!-- In the Body section appears the visible part of the HTML document -->
+  <body>
+    
+    <!-- h1, ..., h6 are headings: title from biggest to smallest -->
+    <!-- p defines the paragraphs -->
+  
+    <!-- Wrapper container -->
+    <div id="wrapper" class="w3-container">
+      
+      <!-- Navigation bar anchored to the top -->
+      <div class="w3-top">
+        <!--
+        <div class="w3-bar w3-white">
+            <a href="#home" class="active w3-bar-item w3-button w3-hover-none"><i class="fa fa-home"></i></a>
+            <a href="#bio" class="w3-bar-item w3-button w3-hover-none w3-hide-small">Bio</a>
+            <a href="#research" class="w3-bar-item w3-button w3-hover-none w3-hide-small">Research</a>
+            <a href="#education" class="w3-bar-item w3-button w3-hover-none w3-hide-small">Education</a>
+            <a href="#skills" class="w3-bar-item w3-button w3-hover-none w3-hide-small">Skills</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-none w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+        </div>
+      </div>
+      
+      <div id="demo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none"><i class="fa fa-home"></i></a>
+        <a href="#bio" class="w3-bar-item w3-button w3-hover-none">Bio</a>
+        <a href="#research" class="w3-bar-item w3-button w3-hover-none">Research</a>
+        <a href="#education" class="w3-bar-item w3-button w3-hover-none">Education</a>
+        <a href="#software" class="w3-bar-item w3-button w3-hover-none">Software</a>
+      </div>
+       -->
+      
+        <div class="w3-bar w3-white">
+            <a href="#home" class="active w3-bar-item w3-button w3-hover-none"><i class="fa fa-home"></i></a>
+            <a href="#bio" class="w3-bar-item w3-button w3-hover-none">Bio</a>
+            <a href="#research" class="w3-bar-item w3-button w3-hover-none">Research</a>
+            <a href="#education" class="w3-bar-item w3-button w3-hover-none">Education</a>
+            <a href="#skills" class="w3-bar-item w3-button w3-hover-none">Skills</a>
+        </div>
+      </div>
+      
+      
+      <!-- HOME SECTION -->
+      <section id="home" class="w3-container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- HEADER CONTAINING NAME, INFO AND PROFILE PICTURE -->
+        <div class="w3-container">
+          <h2 style="text-align:center;">
+            Giorgio Paulon
+          </h2>
+          <p style="text-align:center;">
+            PhD Student in Statistics at <a href="https://stat.utexas.edu">The University of Texas at Austin</a>
+            <br>
+            GDC 7.418, 2317 Speedway D9800, Austin (TX)
+            <br>
+            <i class="fa fa-envelope" style="font-size:16px"></i>
+            <a href="mailto:giorgio.paulon@utexas.edu">giorgio.paulon@utexas.edu</a>
+          </p>
+          
+          <p style="text-align:center;">
+            <img src="img/profile_pic.jpg" alt="Profile Picture" style="width:180px;height:180px;" class="w3-circle w3-image">
+          </p>
+          
+          
+          <p style="text-align:center;">
+            <a href="https://github.com/gpaulon" class="fa fa-github" style="font-size:24px;font-size:30px;width:30px;text-align:center;margin:5px2px;border-radius:50%;"></a>
+            <a href="https://www.linkedin.com/in/giorgiopaulon/" class="fa fa-linkedin" style="font-size:24px;padding:10px;font-size:30px;width:30px;text-align:center;margin:5px2px;border-radius:50%;"></a>
+            <a href="https://www.instagram.com/giorgiopaulon/" class="fa fa-instagram" style="font-size:24px;padding:20px;font-size:30px;width:30px;text-align:center;margin:5px2px;border-radius:50%;"></a>
+            <a href="https://scholar.google.it/citations?user=j-caV3AAAAAJ&hl=en" class="ai ai-google-scholar" style="font-size:24px;padding:20px;font-size:30px;width:30px;text-align:center;margin:5px2px;border-radius:50%;"></a>
+          </p>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </section>
+      
+      <!-- BIO SECTION -->
+      <section id="bio" class="w3-container">
+        <br>
+        <hr style="border-top: 1px solid #8c8b8b">
+        
+        <div class="w3-container">
+          <h2 style="text-align:left;">
+              Biography
+          </h2>
+          <br>
+          
+          <div class="w3-cell-row">
+            <div class="w3-container w3-cell w3-cell-top w3-mobile">
+              <p>I am Giorgio Paulon, a second year PhD student in Statistics at the University of Texas at Austin. I am working under the joint supervision of <a href="https://abhrastat.github.io"><b>Abhra Sarkar</b></a> and <a href="https://www.ma.utexas.edu/users/pmueller/"><b>Peter Müller</b></a>. I am generally interested in Bayesian nonparametric models that solve applied problems.</p>
+              
+              <p>I am originally from <a style="color:rgb(205,38,38);" href="https://en.wikipedia.org/wiki/Udine"><b>Udine</b></a>, Italy, and I obtained both my BSc and MSc at Politecnico Di Milano in Mathematical Engineering. I also spent two years at École Centrale Paris, France, for a double degree program  <a style="color:rgb(205,38,38);" href="https://en.wikipedia.org/wiki/Top_Industrial_Managers_for_Europe"><b>(T.I.M.E)</b></a>.</p>
+              
+              <p>I love photography and I am passionate about travelling. <b>Photography</b> is a mental exercise that helps me to focus and to relax. <b>Travelling</b>, especially in uncomfortable and far away places, gives me many motivations and helps me finding the unexpected outside of my daily routine.</p>
+              
+            </div>
+            <div id="googleMap" class="w3-container w3-cell w3-cell-middle w3-mobile" style="width:50%;height:50%;"></div>
+          </div>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </section>
+      
+      <!-- RESEARCH SECTION -->
+      <section id="research" class="w3-container">
+        <br>
+        <hr style="border-top: 1px solid #8c8b8b">
+        
+        <div class="w3-container">
+          <h2 style="text-align:left;">
+              Research
+          </h2>
+          
+          <div class="w3-container">
+            <h4 style="text-align:left;">
+                Peer-reviewed Publications
+            </h4>
+            
+            <ul>
+              <li><b>Paulon, G.</b>, Reetzke, R., Sarkar, A., Chandrasekaran, B. (2018). Functional Logistic Mixed Effects Models for Learning Curves from Longitudinal Categorical Data. <i>Under Review</i></li>
+              <li><b>Paulon, G.</b>, Trippa, L., Müller, P. (2018). <a href="https://projecteuclid.org/euclid.ba/1508378464">Invited comment on "Bayesian Cluster Analysis: Point Estimation and
+  Credible Balls".</a> <i>Bayesian Analysis</i> <b>13</b>(2), 590-593</li>
+              <li><b>Paulon, G.</b>, De Iorio, M., Guglielmi, A., Ieva, F. (2018). <a href="https://academic.oup.com/biostatistics/advance-article-abstract/doi/10.1093/biostatistics/kxy026/5050476?redirectedFrom=fulltext">Joint modeling of recurrent events and survival: a Bayesian non-parametric approach.</a> To appear in <i>Biostatistics</i></li>
+            </ul>
+            
+            <h4 style="text-align:left;">
+                Presentations
+            </h4>
+            
+            <ul>
+              <li><b>Poster</b>: Bayesian Autoregressive Models for waiting times of Recurrent Events. <i>Bayesian Young Statisticians Meeting (BAYSM), Florence, Italy; June, 2016.</i></li>
+            </ul>
+            
+            
+            <h4 style="text-align:left;">
+                Events and summer schools
+            </h4>
+            
+            <ul>
+              <li><b>Summer School</b>: 2<sup>nd</sup> Bocconi Summer School in Advanced Statistics and Probability - Probabilistic Graphical Models. <i>Bocconi University, Milano (Italy); July, 2018.</i></li>
+              
+              <li><b>Summer School</b>: 22<sup>nd</sup> Summer Institute in Statistical Genetics (SISG). <i>University of Washington, Seattle (USA); July, 2017.</i></li>
+                          
+            </ul>
+  
+  
+            <h4 style="text-align:left;">
+                Interests
+            </h4>
+            
+            <ul>
+              <li>Bayesian Statistics</li>
+              <li>Functional Regression</li>
+              <li>Clustering</li>
+              <li>Nonparametrics</li>
+              <li>Biostatistics</li>
+            </ul>
+          
+          </div>
+        </div>
+
+      </section>
+      
+      
+      <!-- EDUCATION SECTION -->
+      <section id="education" class="w3-container">
+        <br>
+        <hr style="border-top: 1px solid #8c8b8b">
+        
+        <div class="w3-container">
+          <h2 style="text-align:left;">
+              Education
+          </h2>
+          <br>
+          
+          <div class="w3-cell-row"> 
+            <div class="w3-container w3-cell w3-mobile">
+                
+              <h3><b>PhD - Statistics</b></h3>
+              <h4 style="color:rgb(140,140,140);">University of Texas at Austin, USA</h4>
+              <p>Four-year degree focused on the theory and methods of statistics. <br> Major emphases are placed on probability models and modern computational statistical tools. <br> Exposition to central ideas of both Bayesian and classical approaches to inference</p>
+            </div>
+              
+            <div class="w3-container w3-cell w3-mobile">
+              <p style="text-align:right;"><b>Aug 2016 - present</b></p>
+            </div>
+          </div>
+            
+          <br>
+          <div class="w3-cell-row"> 
+            <div class="w3-container w3-cell w3-mobile">
+                
+              <h3><b>MSc - Mathematical Engineering</b></h3>
+              <h4 style="color:rgb(140,140,140);">Politecnico Di Milano, Italy</h4>
+              <p>Advanced studies in applied mathematics with strong background in Bayesian statistics and financial mathematics</p>
+              <p>Final Grade: <b>110/110</b> cum laude</p>
+            </div>
+              
+            <div class="w3-container w3-cell w3-mobile">
+              <p style="text-align:right;"><b>Sep 2013 - Apr 2016</b></p>
+            </div>
+          </div>
+            
+          <br>
+          <div class="w3-cell-row"> 
+            <div class="w3-container w3-cell w3-mobile">
+                
+              <h3><b>Double Degree - Engineering</b></h3>
+              <h4 style="color:rgb(140,140,140);">École Centrale Paris, France</h4>
+              <p>Two years Double Degree program as TIME student ("Top Industrial Managers of Europe")</p>
+            </div>
+              
+            <div class="w3-container w3-cell w3-mobile">
+              <p style="text-align:right;"><b>Aug 2011 - Jun 2013</b></p>
+            </div>
+          </div>
+            
+          <br>
+          <div class="w3-cell-row"> 
+            <div class="w3-container w3-cell w3-mobile">
+                
+              <h3><b>BSc - Mathematical Engineering</b></h3>
+              <h4 style="color:rgb(140,140,140);">Politecnico Di Milano, Italy</h4>
+              <p>Engineering studies with particular focus on mathematics, numerical analysis and statistical modelling</p>
+              <p>Final Grade: <b>110/110</b> cum laude</p>
+            </div>
+              
+            <div class="w3-container w3-cell w3-mobile">
+              <p style="text-align:right;"><b>Sep 2009 - Sep 2013</b></p>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="w3-container">
+        <br>
+        <hr style="border-top: 1px solid #8c8b8b">
+        
+        <div class="w3-container">
+          <h2 style="text-align:left;">
+            Computer Skills
+          </h2>
+          
+          <ul class="fa-ul">
+            <li>
+              <i class="fa fa-3x" style="width:15%;vertical-align:top;"><img src="img/logos/rstudio.png" style="height:40px;vertical-align:top;"></i>
+              <i class="fa devicon-python-plain-wordmark fa-3x" style="width:15%;"></i>
+              <i class="fa devicon-cplusplus-plain fa-3x" style="width:15%;"></i>
+              <i class="fa devicon-github-plain-wordmark fa-3x" style="width:15%;"></i>
+              <i class="fa devicon-mysql-plain-wordmark fa-3x" style="width:15%;"></i>
+            </li>           
+          </ul>
+          
+          
+        </div>
+        
+        <br>
+        
+        <div class="w3-container">
+          <h2 style="text-align:left;">
+            Languages
+          </h2>
+          
+          <ul class="fa-ul">
+            <li>
+              <i class="fa-li fa fa-battery-full" style="color:rgb(67,205,128);font-size:16px;"></i>
+              Italian
+            </li>
+            <li>
+              <i class="fa-li fa fa-battery-full" style="color:rgb(67,205,128);font-size:16px;"></i>
+              English - First Certificate of English (FCE) score: <b>A</b>; TOEFL iBT score: <b>112/120</b>
+            </li>
+            <li>
+              <i class="fa-li fa fa-battery-full" style="color:rgb(67,205,128);font-size:16px;"></i>
+              French
+            </li>
+            <li>
+              <i class="fa-li fa fa-battery-half" style="color:rgb(255,215,0);font-size:16px;"></i>
+              Spanish
+            </li>
+          </ul>
+            
+        </div>
+        
+        <br>
+        
+        <div class="w3-container">
+          <h2 style="text-align:left;">
+              Awards &amp; Certifications
+          </h2>
+          
+          <ul class="fa-ul">
+            <li>
+              <i class="fa-li fa fa-trophy" style="color:rgb(255,215,0);font-size:20px;"></i>
+              <b>Scholarship</b>: 2<sup>nd</sup> Bocconi Summer School in Advanced Statistics and Probability - Probabilistic Graphical Models.
+              <i>Bocconi University, Milano (Italy)</i>
+            </li>
+            <li>
+              <i class="fa-li fa fa-trophy" style="color:rgb(255,215,0);font-size:20px;"></i>
+              <b>Scholarship</b> and <b>Travel grant</b>: 22<sup>nd</sup> Summer Institute in Statistical Genetics (SISG). 
+              <i>University of Washington, Seattle (USA)</i>
+            </li>
+            <li>
+              <i class="fa-li fa fa-trophy" style="color:rgb(255,215,0);font-size:20px;"></i>
+              <b>Fellowship</b>: Statistics and Data Sciences 4 years Excellence Fellowship. 
+              <i>University of Texas at Austin (USA)</i>
+            </li>
+            <li>
+              <i class="fa-li fa fa-trophy" style="color:rgb(255,215,0);font-size:20px;"></i>
+              <b>Award</b>: Stats under the Stars 2. Best report award in a Data Science hackathon organised by the Italian Statistical Society. 
+              <i>Università degli Studi di Salerno (Italy)</i>
+            </li>
+          </ul>
+        </div>
+        
+
+        <br>
+        <br>
+        <br>
+
+      </section>
+      
+      
+      <!--
+      <section id="interests" class="w3-container">
+        <br>
+        <hr style="border-top: 1px solid #8c8b8b">
+        
+        <h2 style="text-align:left;">
+            Interests
+        </h2>
+    
+        <div class="w3-container">
+          I love photography and I am passionate about travelling. <b>Photography</b> is a mental exercise that helps me to focus and to relax. <br> 
+          <b>Travelling</b>, especially in uncomfortable and far away places, gives me many motivations and helps me finding the unexpected outside of my daily routine. 
+        </div>
+        
+        <br>
+        <br>
+        
+        
+        <div class="row"> 
+          <div class="column">
+            <img src="img/gallery/Marfa/1.jpg" style="width:100%;background-image">
+            <img src="img/gallery/Marfa/2.jpg" style="width:100%">
+            <img src="img/gallery/Marfa/5.jpg" style="width:100%">
+            <img src="img/gallery/Marfa/7.jpg" style="width:100%">
+            <img src="img/gallery/Marfa/9.jpg" style="width:100%">
+            <img src="img/gallery/Mexico/1.jpg" style="width:100%">
+            <img src="img/gallery/Mexico/3.jpg" style="width:100%">
+            <img src="img/gallery/Mexico/5.jpg" style="width:100%">
+            <img src="img/gallery/Mexico/7.jpg" style="width:100%">
+            <img src="img/gallery/calanques.jpg" style="width:100%">
+            <img src="img/gallery/seattle.jpg" style="width:100%">
+            <img src="img/gallery/fushimi.jpg" style="width:100%">
+            <img src="img/gallery/ooty.jpg" style="width:100%">
+
+          </div>
+          <div class="column">
+            <img src="img/gallery/Marfa/3.jpg" style="width:100%">
+            <img src="img/gallery/Marfa/4.jpg" style="width:100%">
+            <img src="img/gallery/Marfa/6.jpg" style="width:100%">
+            <img src="img/gallery/Marfa/8.jpg" style="width:100%">
+            <img src="img/gallery/Marfa/10.jpg" style="width:100%">
+            <img src="img/gallery/Mexico/2.jpg" style="width:100%">
+            <img src="img/gallery/Mexico/4.jpg" style="width:100%">
+            <img src="img/gallery/Mexico/6.jpg" style="width:100%">
+            <img src="img/gallery/Mexico/8.jpg" style="width:100%">
+            <img src="img/gallery/Greece/1.jpg" style="width:100%">
+            <img src="img/gallery/friuli.jpg" style="width:100%">
+            <img src="img/gallery/rainer.jpg" style="width:100%">
+            <img src="img/gallery/monaco.jpg" style="width:100%">
+
+
+          </div> 
+
+
+        </div>
+      
+      </section>
+      -->
+  
+    </div>
+    
+    <!-- Function that allows the navigation bar to collapse -->
+    <script>
+      function myFunction() {
+          var x = document.getElementById("demo");
+          if (x.className.indexOf("w3-show") == -1) {
+              x.className += " w3-show";
+          } else { 
+              x.className = x.className.replace(" w3-show", "");
+          }
+      }
+      
+    </script>
+    
+    <script>
+      function myMap() {
+        // The locations
+        var austin = {lat: 30.2672, lng: -97.7431};
+        var udine = {lat: 46.0711, lng: 13.2346};
+
+        var mapProp= {
+            center:new google.maps.LatLng(36.17,-40.40),
+            zoom:2,
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        var marker = new google.maps.Marker({position: austin, map: map, title:"Austin, TX"});
+        var marker = new google.maps.Marker({position: udine, map: map, title:"Udine, IT"});
+      }
+    </script>
+
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApupPHrD9nPpLSaiCbsg1YG7KBbwKs0bc&callback=myMap">
+    </script>
+    
+  </body>
+</html>
